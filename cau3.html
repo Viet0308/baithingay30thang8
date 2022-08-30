@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  function sumOfListPrime(number)
+  {
+    let n;
+    let i;
+    let sum = 0;
+    for (n = 2; n <= number; n++) {
+      let check = true;
+      for (i = 2; i <= (n - 1); i++) {
+        if (n % i === 0) {
+          check = false;
+          break;
+        }
+      }
+      if (check === true) {
+        sum = sum + n;
+      }
+    }
+    return sum;
+  }
+  let number=prompt("please insert number");
+  document.write("tong cac so nguyen to toi number la "+ sumOfListPrime(number));
+
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findAvg() {
+        let sum = 0;
+        let avg;
+        for (let i = 0; i < numbers.length; i++) {
+            sum = sum + numbers[i];
+        }
+        avg = sum/numbers.length;
+        return avg;
+    }
+    let numbers = [5,6,7,8,9,10];
+    let trungBinh = findAvg(numbers);
+    alert ("diem trung binh la "+trungBinh);
+</script>
+</body>
+</html>
